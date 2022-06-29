@@ -1,0 +1,13 @@
+body {
+    background-image:url("imagens/fundoespaco.jpg");
+}
+
+.cabecalho{
+    color:aliceblue;
+}
+
+#avancar {
+    text-decoration:none;
+    text-transform:uppercase;
+    color:aquamarine;
+}
