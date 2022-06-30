@@ -1,5 +1,6 @@
 body {
     background-image:url("imagens/fundoespaco.jpg");
+    background-repeat:no-repeat;
 }
 
 .cabecalho{
@@ -10,4 +11,14 @@ body {
     text-decoration:none;
     text-transform:uppercase;
     color:aquamarine;
+}
+
+#octocat {
+   float:left;
+   margin-top:100px;
+   
+}
+
+.rodape {
+    height:30px;
 }
