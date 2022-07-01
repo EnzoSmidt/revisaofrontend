@@ -5,8 +5,11 @@ button.onclick = function () {
   if ((nome == "git add")) {
     alert("O" + nome + ", serve para adicionar um arquivo em um branch. Parabéns! Você acertou!");
   }
-  else {
-    alert("O" + nome + ", não é o comando correto para adicionar um arquivo em um branch.");
+  else if ((nome == null)) {
+    return
+  }  
+  else if ((nome != "git add")) {
+    alert("esse não é o comando correto");
   }
   window.location="aula4.html";
 };

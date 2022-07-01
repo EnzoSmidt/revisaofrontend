@@ -5,8 +5,11 @@ button.onclick = function () {
   if ((nome == "git commit -m")) {
     alert("O" + nome + ", serve para salvar as alterações de um repositório local.Parabéns! Você acertou!");
   }
-  else {
-    alert("O" + nome + ", não é o comando correto para salvar as alterações de um repositório local.");
+  else if ((nome == null)) {
+    return
+  }  
+  else if ((nome != "git commit -m")) {
+    alert("esse não é o comando correto");
   }
   window.location="aula9.html";
 };

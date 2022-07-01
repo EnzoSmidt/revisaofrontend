@@ -5,8 +5,11 @@ button.onclick = function () {
   if ((nome == "git init")) {
     alert("O" + nome + ", serve para iniciar o git.Parabéns! Você acertou!");
   }
-  else {
-    alert("O" + nome + ", não é o comando correto para inicializar o git.");
+  else if ((nome == null)) {
+    return
+  }  
+  else if ((nome != "git init")) {
+    alert("esse não é o comando correto");
   }
   window.location="aula2.html";
 };

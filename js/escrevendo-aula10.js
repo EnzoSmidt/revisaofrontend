@@ -5,8 +5,11 @@ button.onclick = function () {
     if ((nome == "git log")) {
         alert("O" + nome + ", serve para ver o histórico de commits.Parabéns! Você acertou!");
     }
-    else {
-        alert("O" + nome + ", não é o comando correto para ver o histórico de commits");
-    }
+    else if ((nome == null)) {
+        return
+      }  
+      else if ((nome != "git log")) {
+        alert("esse não é o comando correto");
+      }
     window.location="final.html";
 };

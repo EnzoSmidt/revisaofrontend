@@ -5,8 +5,11 @@ button.onclick = function () {
   if ((nome == "git pull")) {
     alert("O" + nome + ", serve para puxar códigos do GitHub para o repostório local.Parabéns! Você acertou!");
   }
-  else {
-    alert("O" + nome + ", não é o comando correto para puxar códigos do GitHub para o repostório local.");
+  else if ((nome == null)) {
+    return
+  }  
+  else if ((nome != "git pull")) {
+    alert("esse não é o comando correto");
   }
   window.location="aula3.html";
 };

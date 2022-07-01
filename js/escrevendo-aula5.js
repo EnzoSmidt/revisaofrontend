@@ -5,8 +5,11 @@ button.onclick = function () {
   if ((nome == "git status")) {
     alert("O" + nome + ", serve para visualizarmos como está o estado atual do diretório de trabalho Git e área de teste.Parabéns! Você acertou!");
   }
-  else {
-    alert("O" + nome + ", não é o comando correto para visualizarmos como está o estado atual do diretório de trabalho Git e área de teste.");
+  else if ((nome == null)) {
+    return
+  }  
+  else if ((nome != "git status")) {
+    alert("esse não é o comando correto");
   }
   window.location="aula6.html";
 };

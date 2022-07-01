@@ -5,8 +5,11 @@ button.onclick = function () {
   if ((nome == "nano index.html")) {
     alert("O" + nome + ", serve para abrir o arquivo index.html dentro do Git Bash.Parabéns! Você acertou!");
   }
-  else {
-    alert("O" + nome + ", não é o comando correto para abrir o arquivo index.html dentro do Git Bash.");
+  else if ((nome == null)) {
+    return
+  }  
+  else if ((nome != "nano index.html")) {
+    alert("esse não é o comando correto");
   }
   window.location="aula7.html";
 };

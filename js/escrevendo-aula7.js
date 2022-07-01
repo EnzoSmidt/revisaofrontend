@@ -5,8 +5,11 @@ button.onclick = function () {
   if ((nome == "git clone")) {
     alert("O" + nome + ", serve para copiar o código de um repositório remoto para a máquina local.Parabéns! Você acertou!");
   }
-  else {
-    alert("O" + nome + ", não é o comando correto para copiar o código de um repositório remoto para a máquina local.");
+  else if ((nome == null)) {
+    return
+  }  
+  else if ((nome != "git clone")) {
+    alert("esse não é o comando correto");
   }
   window.location="aula8.html";
 };
