@@ -20,5 +20,8 @@ body {
 }
 
 .rodape {
-    height:30px;
+    color:aliceblue;
+    font-size:large;
+    text-align:center;
+    margin-top:500px;
 }
